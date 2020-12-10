@@ -23,6 +23,13 @@ const MENUS = [
     icon: 'fas fa-bullseye',
   },
   {
+    name: 'interactivechat',
+    as: 'a',
+    href: '/chat/interactivechat',
+    label: 'Interactive Test',
+    icon: 'fas fa-bullseye',
+  },
+  {
     name: 'dashboard',
     as: 'a',
     href: '/dashboard/dashboard',

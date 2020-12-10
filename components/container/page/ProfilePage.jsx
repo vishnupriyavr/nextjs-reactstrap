@@ -13,12 +13,12 @@ const ProfilePage = memo(props => {
                 <Col xs="12" lg="12" className="mx-auto">
                   <div className="text-center">
                     <h1 className="font-head-base text-dark mt-5">
-                      Mister Chef Doe
-                      <small className="h5 d-block">Master Kitchen</small>
+                      Proven Solution
+                      <small className="h5 d-block">NLP Engine</small>
                     </h1>
                     <Col xs="10" md="5" className="mx-auto">
                       <img
-                        src="/images/profile2.jpg"
+                        src="/images/proven-logo.png"
                         className="rounded-circle img-thumbnail mt-5"
                         alt="Profile"
                       />
@@ -32,10 +32,10 @@ const ProfilePage = memo(props => {
                       <hr className="col-3 col-lg-3 mx-auto" />
                       <div className="my-4 mx-auto px-0 d-flex justify-content-center">
                         <a
-                          href="#"
+                          href="https://www.provensolution.com"
                           className="btn btn-outline-warning btn-md btn-ghost-light shadow-md mr-1"
                         >
-                          Contact Me
+                          Contact US
                         </a>
                         <a
                           href="#"
