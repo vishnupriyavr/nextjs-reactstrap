@@ -1,19 +1,20 @@
 // Menus
 const MENUS = [
   {
-    name: 'dashboard',
+    name: 'profile',
     as: 'a',
-    href: '/dashboard/dashboard',
+    href: '/page/profile',
     label: 'Getting Started',
     icon: 'fas fa-chart-pie',
   },
   {
-    name: 'cards',
+    name: 'employees',
     as: 'a',
-    href: '/card/posts',
+    href: '/card/employees',
     label: 'Templates',
     icon: 'fas fa-clone',
   },
+
   {
     name: 'buttons',
     as: 'a',
@@ -22,21 +23,21 @@ const MENUS = [
     icon: 'fas fa-bullseye',
   },
   {
-    name: 'tables',
+    name: 'dashboard',
     as: 'a',
-    href: '/table/tables',
+    href: '/dashboard/dashboard',
     label: 'Metrics',
-    icon: 'fas fa-columns',
+    icon: 'fas fa-chart-pie',
   },
 ];
 // Sub menus
 const SUBMENUS = [
   {
-    name: 'employees',
+    name: 'cards',
     as: 'a',
-    href: '/card/employees',
-    label: 'Employees',
-    icon: '',
+    href: '/card/posts',
+    label: 'Cards',
+    icon: 'fas fa-clone',
   },
   {
     name: 'carousels',

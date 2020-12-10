@@ -239,51 +239,27 @@ const CARDS = {
   employees: [
     {
       id: 1,
-      name: 'Curtis Biafrah Amarek',
-      title: 'Div Manager',
+      name: 'Financial Bot',
+      title: 'Chatbot for Banking and Financial Services',
       about:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      photo: '/images/profile2.jpg',
+        'Predefined Template for building a financial bot, to provide personalized assistance, beyond banking hours.',
+      photo: '/images/finance-bot.png',
     },
     {
       id: 2,
-      name: 'JB Moreno Savannah',
+      name: 'Customer Service Bot',
       title: 'Div Staff',
       about:
         "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      photo: '/images/profile9.jpg',
+      photo: '/images/customer-service-bot.jpg',
     },
     {
       id: 3,
-      name: 'Micah Milacjovic',
+      name: 'Retail Bot',
       title: 'Div Senior',
       about:
         "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      photo: '/images/profile5.jpg',
-    },
-    {
-      id: 4,
-      name: 'Steinley Coihr',
-      title: 'Div Manager',
-      about:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      photo: '/images/profile10.jpg',
-    },
-    {
-      id: 5,
-      name: 'Illyass Hasyid Adnan',
-      title: 'Div Staff',
-      about:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      photo: '/images/profile11.jpg',
-    },
-    {
-      id: 6,
-      name: 'Nino Franklin Jones',
-      title: 'Div Senior',
-      about:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      photo: '/images/profile5.jpg',
+      photo: '/images/retail-bot.png',
     },
   ],
 };
