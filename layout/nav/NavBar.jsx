@@ -27,7 +27,7 @@ function NavBar({
       <Navbar color="dark" dark expand="sm" fixed="top">
         <NavbarBrand href="/">
           <img src="/logo.svg" alt="Logo" className="logo" />
-          NextJS BS 4
+          Proven Solution NLP Engine
         </NavbarBrand>
         <NavbarToggler onClick={toggle} color="dark" />
         <Collapse isOpen={isOpen} navbar>
@@ -84,7 +84,7 @@ function NavBar({
                   src="/images/profile2.jpg"
                   className="border rounded-circle img-42 img-fluid mr-1"
                 />
-                John Doe
+                Vishnu Priya VR
               </NavbarText>
             </DropdownToggle>
             <DropdownMenu>
