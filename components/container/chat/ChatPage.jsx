@@ -1,14 +1,4 @@
 import React, { memo } from 'react';
-import {
-  Chat,
-  ChatForm,
-  ChatMessages,
-  MessageProps,
-  AttachedFile,
-} from '@paljs/ui/Chat';
-//import { Card, CardBody } from '@paljs/ui/Card';
-import Row from '@paljs/ui/Row';
-import Col from '@paljs/ui/Col';
 
 import {
   Container,
@@ -133,37 +123,44 @@ const ChatPage = memo(props => {
       <h2>Interactive Chat</h2>
       <Card className="w-25 box-shadow">
         <CardBody>
-          <Row>
-            <Col
-              breakPoint={{ xs: 12, md: 6 }}
-              style={{ marginBottom: '1rem' }}
-            >
-              <Chat title="OAH Technology">
-                <ChatMessages messages={messages} mapKey="API_KEY" />
-                <ChatForm
-                  onSend={v => onSendHandle(v)}
-                  dropFiles
-                  filesIcon="document"
+          <Form action="/page/profile" method="POST">
+            <fieldset>
+              <legend className="text-primary bg-gradient-primary font-weight-bold uppercase">
+                <h3 className="mt-2 ml-3 text-light text-center">Login</h3>
+              </legend>
+              <FormGroup>
+                <Label for="exampleInputEmail3">Email address</Label>
+                <Input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail3"
+                  aria-describedby="emailHelp"
                 />
-              </Chat>
-            </Col>
-            <Col breakPoint={{ xs: 12, md: 6 }}>
-              <Card>
-                <header>Main features</header>
-                <CardBody>
-                  <ul>
-                    <li>
-                      different message types support (text, image, file, file
-                      group, map, etc)
-                    </li>
-                    <li>drag &amp; drop for images and files with preview</li>
-                    <li>different UI styles</li>
-                  </ul>
-                  <Row />
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
+                <small id="emailHelp" className="form-text text-muted"></small>
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleInputPassword3">Password</Label>
+                <Input
+                  type="password"
+                  className="form-control"
+                  id="exampleInputPassword3"
+                />
+              </FormGroup>
+              <FormGroup check>
+                <Input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="exampleCheck3"
+                />
+                <Label check for="exampleCheck3">
+                  Check me out
+                </Label>
+              </FormGroup>
+            </fieldset>
+            <Button color="primary" block size="lg" className="mt-2">
+              Submit
+            </Button>
+          </Form>
         </CardBody>
       </Card>
     </>
