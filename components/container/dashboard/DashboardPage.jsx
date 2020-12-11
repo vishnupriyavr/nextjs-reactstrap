@@ -16,7 +16,7 @@ import {
 const DashboardPage = memo(props => {
   return (
     <>
-      <h5>User Metrics</h5>
+      <h4>User Metrics</h4>
       <p>
         Welcome, this is your <code>User Metrics</code>, you can check for different metrics related to the NLP Engine below.
       </p>
@@ -170,152 +170,15 @@ const DashboardPage = memo(props => {
             </CardBody>
           </Card>
         </Col>
+         <h4>NLP Metrics</h4>
+         
+      <p>
+        Welcome, this is your <code>NLP Metrics</code>, you can check for different metrics related to the NLP Engine below.
+      </p>
         <Col md="6" lg="4" className="mb-4">
-          <Card className="h-100 mb-2">
-            <CardBody>
-              <CardTitle tag="h4" className="headline-mm">
-                Subscriptions
-              </CardTitle>
-              <Row className="block">
-                <Col lg="6" className="mb-2">
-                  <Button size="sm" outline color="primary">
-                    <Badge color="primary">21</Badge>&nbsp;Premium
-                  </Button>
-                  <span class="small ml-2 text-primary">
-                    <i className="fas fa-arrow-up"></i> 2
-                  </span>
-                </Col>
-                <Col lg="6" className="mb-2">
-                  <Button size="sm" outline color="success">
-                    <Badge color="success">90</Badge>&nbsp;Enterprise
-                  </Button>
-                  <span class="small ml-2 text-success">
-                    <i className="fas fa-arrow-up"></i> 43
-                  </span>
-                </Col>
-                <Col lg="6" className="mb-2">
-                  <Button size="sm" outline color="secondary">
-                    <Badge color="secondary">45</Badge>&nbsp;Free
-                  </Button>
-                  <span class="small ml-2 text-secondary">
-                    <i className="fas fa-arrow-up"></i> 11
-                  </span>
-                </Col>
-                <Col lg="6" className="mb-2">
-                  <Button size="sm" outline color="danger">
-                    <Badge color="danger">559</Badge>&nbsp;Basic
-                  </Button>
-                  <span class="small ml-2 text-danger">
-                    <i className="fas fa-arrow-up"></i> 32
-                  </span>
-                </Col>
-              </Row>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col md="6" lg="4" className="mb-4">
-          <Card className="h-100 mb-2">
-            <CardBody>
-              <CardTitle tag="h4" className="headline-mm">
-                Files Overview
-              </CardTitle>
-              <Row className="clearfix">
-                <Col sm="4">
-                  <CardText tag="span" className="small">
-                    Projects
-                  </CardText>
-                  <div>
-                    <i class="fas fa-briefcase fa-1x text-primary"></i>&nbsp;
-                    <span className="font-weight-bold text-muted">2341</span>
-                  </div>
-                </Col>
-                <Col sm="4">
-                  <CardText tag="span" className="small">
-                    Downloads
-                  </CardText>
-                  <div>
-                    <i class="fas fa-cloud-download-alt fa-1x text-success"></i>
-                    &nbsp;
-                    <span className="font-weight-bold text-muted">4144</span>
-                  </div>
-                </Col>
-                <Col sm="4">
-                  <CardText tag="span" className="small">
-                    Documents
-                  </CardText>
-                  <div>
-                    <i class="fas fa-list fa-1x text-warning"></i>&nbsp;
-                    <span className="font-weight-bold text-muted">3410</span>
-                  </div>
-                </Col>
-                <Col sm="4">
-                  <CardText tag="span" className="small">
-                    News
-                  </CardText>
-                  <div>
-                    <i class="fas fa-newspaper fa-1x text-danger"></i>&nbsp;
-                    <span className="font-weight-bold text-muted">5372</span>
-                  </div>
-                </Col>
-                <Col sm="4">
-                  <CardText tag="span" className="small">
-                    Uploads
-                  </CardText>
-                  <div>
-                    <i class="fas fa-upload fa-1x text-info"></i>&nbsp;
-                    <span className="font-weight-bold text-muted">4144</span>
-                  </div>
-                </Col>
-                <Col sm="4">
-                  <CardText tag="span" className="small">
-                    Orders
-                  </CardText>
-                  <div>
-                    <i class="fas fa-shopping-cart fa-1x text-primary"></i>
-                    &nbsp;
-                    <span className="font-weight-bold text-muted">3410</span>
-                  </div>
-                </Col>
-              </Row>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col md="6" lg="4" className="mb-4">
-          <Card className="h-100 mb-2">
-            <CardBody>
-              <CardTitle tag="h4" className="headline-mm">
-                Popular menus
-              </CardTitle>
-              {/* <CardText></CardText> */}
-              <Table hover size="sm" borderless>
-                {/* <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Username</th>
-                  </tr>
-                </thead> */}
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Eggplant Parmigiana Salad</td>
-                    <td>2342</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Grilled Portobello Salad</td>
-                    <td>2241</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Sautéed Egg Roll</td>
-                    <td>1122</td>
-                  </tr>
-                </tbody>
-              </Table>
-              {/* <Button>Go somewhere</Button> */}
-            </CardBody>
-          </Card>
+           
+      
+          
         </Col>
       </Row>
     </>
