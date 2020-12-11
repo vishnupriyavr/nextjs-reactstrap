@@ -7,7 +7,7 @@ const ProfilePage = memo(props => {
       <Container fluid>
         <Row>
           <Col md="12" id="profile">
-            <h1>Profile</h1>
+            <h2>Getting Started</h2>
             <Container>
               <Row>
                 <Col xs="12" lg="12" className="mx-auto">

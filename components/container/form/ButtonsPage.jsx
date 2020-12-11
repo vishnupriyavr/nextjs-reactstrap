@@ -36,7 +36,7 @@ const ButtonsPage = memo(props => {
 
   return (
     <>
-      <h1>Bring Your Own Data</h1>
+      <h3>Bring Your Own Data</h3>
       <iframe
         src="http://localhost:3000"
         title="Icons iframe"

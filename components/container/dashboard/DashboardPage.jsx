@@ -16,31 +16,11 @@ import {
 const DashboardPage = memo(props => {
   return (
     <>
-      <h1>Dashboard</h1>
+      <h5>User Metrics</h5>
       <p>
-        Welcome, this is your <code>pages/dashboard.jsx</code>, please continue.
+        Welcome, this is your <code>User Metrics</code>, you can check for different metrics related to the NLP Engine below.
       </p>
-      <div className="d-flex p-3 my-3 align-items-center text-white-50 bg-gradient-primary box-shadow">
-        <img
-          className="mr-3"
-          src="/images/brand/bootstrap-outline.svg"
-          alt="Brand"
-          width="48"
-          height="48"
-        />
-        <div className="lh-100">
-          <h6 className="mb-0 text-white lh-100">Bootstrap</h6>
-          <small>Since 2011</small>
-        </div>
-        <div className="ml-auto">
-          <blockquote className="blockquote text-right p-0 m-0">
-            <p className="m-0">Welcome to Em Admin Dashboard</p>
-            <footer className="blockquote-footer text-white">
-              Web Administrator, <cite title="Source Title">Web Bot</cite>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
+      
       <Row>
         <Col md="6" lg="4" className="mb-4">
           <Card className="h-100 mb-2">
