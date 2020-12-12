@@ -33,10 +33,10 @@ const Example = (props) => {
         <TabPane tabId="1">
           <Row>
             <Col sm="12">
-              <h4>Tab 1 Contents</h4>
+              <h5>NLP Overview Metrics</h5>
               <iframe
         src="https://8501-ead87689-a21a-4d93-9b75-7a084809c021.ws-us03.gitpod.io/"
-        title="Icons iframe"
+        title="NLP Overview Metrics iframe"
         width="1000"
         height="500"
       >
@@ -48,19 +48,17 @@ const Example = (props) => {
         <TabPane tabId="2">
           <Row>
             <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
+              <h5>NLP Model Metrics</h5>
+              <iframe
+        src="https://8501-ead87689-a21a-4d93-9b75-7a084809c021.ws-us03.gitpod.io/"
+        title="NLP Overview Metrics iframe"
+        width="1000"
+        height="500"
+      >
+        <p>Your browser does not support iframes.</p>
+      </iframe>
             </Col>
-            <Col sm="6">
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Go somewhere</Button>
-              </Card>
-            </Col>
+            
           </Row>
         </TabPane>
       </TabContent>
