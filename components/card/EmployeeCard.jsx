@@ -1,7 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import propTypes from 'prop-types';
-import { Col } from 'reactstrap';
+import { Col, Button } from 'reactstrap';
 
 class EmployeeCard extends React.Component {
   constructor(props) {
@@ -55,24 +55,7 @@ class EmployeeCard extends React.Component {
                       {employee.about}
                     </p>
                     <div>
-                      <a
-                        href="#"
-                        className="btn btn-sm btn-info rounded-circle mr-1"
-                      >
-                        <i className="fab fa-linkedin"></i>
-                      </a>
-                      <a
-                        href="#"
-                        className="btn btn-sm btn-dark rounded-circle mr-1"
-                      >
-                        <i className="fab fa-github"></i>
-                      </a>
-                      <a
-                        href="#"
-                        className="btn btn-sm btn-primary rounded-circle mr-1"
-                      >
-                        <i className="fab fa-facebook"></i>
-                      </a>
+                        <Button>Lets Clone It!</Button>
                     </div>
                   </Col>
                 </div>

@@ -8,7 +8,6 @@ const EmployeePage = memo(props => {
 
   return (
     <>
-      <h1>Templates</h1>
       <h4>Predefined Templates</h4>
       <EmployeeCard items={CARDS.employees} />
     </>

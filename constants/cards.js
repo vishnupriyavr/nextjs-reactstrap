@@ -240,7 +240,7 @@ const CARDS = {
     {
       id: 1,
       name: 'Financial Bot',
-      title: 'Chatbot for Banking and Financial Services',
+      title: 'Chatbot for Banking and Financial Service',
       about:
         'Predefined Template for building a financial bot, to provide personalized assistance, beyond banking hours.',
       photo: '/images/finance-bot.png',
@@ -248,17 +248,17 @@ const CARDS = {
     {
       id: 2,
       name: 'Customer Service Bot',
-      title: 'Div Staff',
+      title: 'Chatbot for Customer Service',
       about:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Predefined Template to significantly reduce case volume for customer service reps by answering basic customer questions .",
       photo: '/images/customer-service-bot.jpg',
     },
     {
       id: 3,
       name: 'Retail Bot',
-      title: 'Div Senior',
+      title: 'Chatbot for Retail',
       about:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "Predefined Template to provide an experience similar to that of shopping with a friend or a store associate.",
       photo: '/images/retail-bot.png',
     },
   ],
