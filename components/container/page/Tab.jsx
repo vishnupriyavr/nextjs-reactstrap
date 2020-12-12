@@ -34,6 +34,14 @@ const Example = (props) => {
           <Row>
             <Col sm="12">
               <h4>Tab 1 Contents</h4>
+              <iframe
+        src="https://8501-ead87689-a21a-4d93-9b75-7a084809c021.ws-us03.gitpod.io/"
+        title="Icons iframe"
+        width="1000"
+        height="500"
+      >
+        <p>Your browser does not support iframes.</p>
+      </iframe>
             </Col>
           </Row>
         </TabPane>
