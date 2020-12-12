@@ -12,12 +12,13 @@ const Example = (props) => {
   return (
     <div>
       <Nav tabs>
+        
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '1' })}
             onClick={() => { toggle('1'); }}
           >
-            Tab1
+            NLP Overview
           </NavLink>
         </NavItem>
         <NavItem>
@@ -25,7 +26,15 @@ const Example = (props) => {
             className={classnames({ active: activeTab === '2' })}
             onClick={() => { toggle('2'); }}
           >
-            More Tabs
+            NLP Model Playground
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink
+            className={classnames({ active: activeTab === '1' })}
+            onClick={() => { toggle('1'); }}
+          >
+            NLP Clustering
           </NavLink>
         </NavItem>
       </Nav>
@@ -58,7 +67,25 @@ const Example = (props) => {
         <p>Your browser does not support iframes.</p>
       </iframe>
             </Col>
+            </Row>
+        </TabPane>
+      </TabContent>
             
+         
+        <TabContent activeTab={activeTab}>
+        <TabPane tabId="3">
+          <Row>
+            <Col sm="12">
+              <h5>NLP Clustering</h5>
+              <iframe
+        src="https://8501-ead87689-a21a-4d93-9b75-7a084809c021.ws-us03.gitpod.io/"
+        title="NLP Clustering iframe"
+        width="1000"
+        height="500"
+      >
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+            </Col>
           </Row>
         </TabPane>
       </TabContent>

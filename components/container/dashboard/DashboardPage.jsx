@@ -37,9 +37,6 @@ const DashboardPage = memo(props => {
   return (
     <>
       <h4>User Metrics</h4>
-      <p>
-        Welcome, this is your <code>User Metrics</code>, you can check for different metrics related to the NLP Engine below.
-      </p>
       
       <Row>
         <Col md="6" lg="4" className="mb-4">
@@ -191,7 +188,7 @@ const DashboardPage = memo(props => {
           </Card>
         </Col>
 
-        
+        <h4>NLP Metrics</h4>
       <Tab/>
         </Row>
     </>
