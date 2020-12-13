@@ -19,7 +19,7 @@ class Buttons extends React.Component {
     return (
       <>
         <HeadDefault
-          title="Buttons | Next.JS with Reactstrap (React dashboard web application)"
+          title="Bring Your Own Data | Next.JS with Reactstrap (React dashboard web application)"
           description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
         />
         <MainLayout

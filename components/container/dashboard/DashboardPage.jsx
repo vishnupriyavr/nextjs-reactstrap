@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo } from 'react';
 import { useState } from 'react';
 import {
   Card,
@@ -13,31 +13,18 @@ import {
   Button,
   Badge,
 } from 'reactstrap';
-import {
-  Nav,
-  NavItem,
-  NavLink,
-  TabContent,
-  TabPane,
-} from 'reactstrap';
-import {
-  Form,
-  FormRow,
-  FormGroup,
-  Label,
-  Input,
-  FormText,
-} from 'reactstrap';
+import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
+import { Form, FormRow, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-import Tab from "../page/Tab"
+import Tab from '../page/Tab';
 
 const DashboardPage = memo(props => {
-    const { isOpen, toggle } = props;
-   
+  const { isOpen, toggle } = props;
+
   return (
     <>
       <h4>User Metrics</h4>
-      
+
       <Row>
         <Col md="6" lg="4" className="mb-4">
           <Card className="h-100 mb-2">
@@ -187,10 +174,30 @@ const DashboardPage = memo(props => {
             </CardBody>
           </Card>
         </Col>
+        <Col md="6" lg="8" className="mb-4">
+          <Card
+            body
+            inverse
+            style={{ backgroundColor: '#333', borderColor: '#333' }}
+            className="h-100 mb-2"
+          >
+            <CardBody>
+              <CardTitle tag="h4" className="headline-mm">
+                NLP Metrics
+              </CardTitle>
 
-        <h4>NLP Metrics</h4>
-      <Tab/>
-        </Row>
+              {/* <CardText> */}
+              <Row className="mb-2">
+                <Tab />
+              </Row>
+              {/* </CardText> */}
+              {/* <CardFooter> */}
+
+              {/* </CardFooter> */}
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
     </>
   );
 });

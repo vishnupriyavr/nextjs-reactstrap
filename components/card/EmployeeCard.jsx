@@ -55,7 +55,9 @@ class EmployeeCard extends React.Component {
                       {employee.about}
                     </p>
                     <div>
-                        <Button>Lets Clone It!</Button>
+                      <Button outline color="success">
+                        Lets Clone It!
+                      </Button>
                     </div>
                   </Col>
                 </div>
@@ -63,7 +65,7 @@ class EmployeeCard extends React.Component {
             );
           })}
         </div>
-      </div>      
+      </div>
     );
   }
 }

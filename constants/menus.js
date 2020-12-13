@@ -19,15 +19,15 @@ const MENUS = [
     name: 'buttons',
     as: 'a',
     href: '/form/buttons',
-    label: 'Bring your data',
-    icon: 'fas fa-bullseye',
+    label: 'Bring Your data',
+    icon: 'fas fa-database',
   },
   {
     name: 'interactivechat',
     as: 'a',
     href: '/chat/interactivechat',
     label: 'Interactive Test',
-    icon: 'fas fa-bullseye',
+    icon: 'fas fa-comments',
   },
   {
     name: 'dashboard',

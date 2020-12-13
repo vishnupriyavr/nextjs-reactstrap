@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import MainLayout from '../layout/MainLayout';
-import HomeContainer from '../components/container/HomeContainer';
+//import HomeContainer from '../components/container/HomeContainer';
+import ProfilePage from '../components/container/page/ProfilePage';
 import HeadDefault from '../layout/head/HeadDefault';
 
 class Index extends React.Component {
@@ -25,7 +26,7 @@ class Index extends React.Component {
           description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
         />
         <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
-          <HomeContainer dispatch={dispatch} storeLayout={storeLayout} />
+          <ProfilePage />
         </MainLayout>
       </>
     );

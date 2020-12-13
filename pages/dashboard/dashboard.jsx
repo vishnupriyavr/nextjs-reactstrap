@@ -21,7 +21,7 @@ class Dashboard extends React.Component {
     return (
       <>
         <HeadDefault
-          title="Dashboard | Next.JS with Reactstrap (React dashboard web application)"
+          title="Metrics | Next.JS with Reactstrap (React dashboard web application)"
           description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
         />
         <MainLayout

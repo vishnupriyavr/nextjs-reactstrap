@@ -19,13 +19,8 @@ function Footer() {
         </li>
         <li>
           <small className="text-muted">
-            Copyright 2020 | dyarfi.github.io. Fork this on&nbsp;
-            <a
-              href="https://github.com/dyarfi/nextjs-reactstrap"
-              className="text-dark"
-            >
-              <i className="fab fa-github"></i> github.
-            </a>
+            Copyright 2020 | provensolution.com. &nbsp;
+            <a href="https://www.provensolution.com" className="text-dark"></a>
           </small>
         </li>
         {links.map(({ key, href, label }) => (
