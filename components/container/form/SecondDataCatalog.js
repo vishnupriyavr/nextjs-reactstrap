@@ -20,6 +20,7 @@ const SecondDataCatalog = memo(props => {
   const [needsEntityArea, setNeedsEntityArea] = useState(false);
   const [needsIntentArea, setNeedsIntentArea] = useState(false);
   const [modalToAnnotate, setModalToAnnotate] = useState(false);
+  const [modalContent, setModalContent] = useState('');
 
   const togglePopOver = () => setPopoverOpen(!popoverOpen);
   const showEntityTextArea = () => setNeedsEntityArea(!needsEntityArea);
@@ -135,7 +136,10 @@ const SecondDataCatalog = memo(props => {
                         name="statusText"
                         className="form-control"
                         placeholder="Your status"
-                        defaultValue="Hi, John Doe was here!"
+                        defaultValue="Start Typing your data...."
+                        onChange={e => {
+                          setModalContent(e.target.value);
+                        }}
                       />
                     </Col>
                     <Col sm="6">
@@ -153,7 +157,7 @@ const SecondDataCatalog = memo(props => {
                       {modalToAnnotate ? (
                         <ModalToIntentAdd
                           modalToAnnotate={modalToAnnotate}
-                          modalContent={'Hi, John Doe was here!'}
+                          modalContent={modalContent}
                         />
                       ) : null}
                     </Col>
