@@ -76,6 +76,7 @@ const SecondDataCatalog = memo(props => {
                       value="1"
                       onClick={() => {
                         showEntityTextArea(true);
+                        setNeedsIntentArea(false);
                       }}
                     />
                     <Label className="form-check-label" for="entitiesYes">
@@ -89,6 +90,9 @@ const SecondDataCatalog = memo(props => {
                       id="entitiesNo"
                       className="form-check-input"
                       value="0"
+                      onClick={() => {
+                        setNeedsIntentArea(true);
+                      }}
                     />
                     <Label className="form-check-label" for="entitiesNo">
                       No
@@ -100,7 +104,7 @@ const SecondDataCatalog = memo(props => {
                 {needsEntityArea ? (
                   <>
                     <Col sm="6">
-                      <Label for="maintenanceModeText">
+                      <Label for="entityTextArea">
                         Provide Special Information
                       </Label>
                       <Input
@@ -108,8 +112,8 @@ const SecondDataCatalog = memo(props => {
                         id="entityTextArea"
                         name="entityTextArea"
                         className="form-control"
-                        placeholder="AccountNumber <br/> Location <br/> Currency"
-                        defaultValue="AccountNumber <br/> Location <br/> Currency"
+                        placeholder="Start Typing Special Info Entries seperated by new line...."
+                        defaultValue="Start Typing Special Info Entries seperated by new line...."
                       />
                     </Col>
                     <Col sm="6">
@@ -154,14 +158,14 @@ const SecondDataCatalog = memo(props => {
                       >
                         Submit Data
                       </Button>
-                      {modalToAnnotate ? (
-                        <ModalToIntentAdd
-                          modalToAnnotate={modalToAnnotate}
-                          modalContent={modalContent}
-                        />
-                      ) : null}
                     </Col>
                   </Row>
+                ) : null}
+                {modalToAnnotate ? (
+                  <ModalToIntentAdd
+                    modalToAnnotate={modalToAnnotate}
+                    modalContent={modalContent}
+                  />
                 ) : null}
               </div>
               <div className="form-row mt-3">
