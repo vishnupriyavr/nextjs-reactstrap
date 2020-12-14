@@ -32,6 +32,28 @@ function NavLeft(props) {
           })}
         </ListGroup>
       </div>
+      <h4 className="headline">Additional</h4>
+      <div className="wrapper-list-group">
+        <ListGroup flush className="list-group-nav-left" tag="div">
+          {SUBMENUS.map((subItem, k) => {
+            const isActive = activeLink === subItem.name ? true : false;
+            const activeMenus = activeLink && activeLink.split('.');
+            return (
+              !subItem.subLinks && (
+                <ListGroupItem
+                  key={`k${k}`}
+                  active={isActive}
+                  tag={subItem.as}
+                  href={subItem.href}
+                >
+                  {subItem.icon && <i className={subItem.icon}></i>}&nbsp;
+                  {subItem.label}
+                </ListGroupItem>
+              )
+            );
+          })}
+        </ListGroup>
+      </div>
     </>
   );
 }

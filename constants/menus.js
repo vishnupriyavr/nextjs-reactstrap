@@ -23,102 +23,28 @@ const MENUS = [
     icon: 'fas fa-database',
   },
   {
-    name: 'interactivechat',
-    as: 'a',
-    href: '/chat/interactivechat',
-    label: 'Interactive Test',
-    icon: 'fas fa-comments',
-  },
-  {
     name: 'dashboard',
     as: 'a',
     href: '/dashboard/dashboard',
     label: 'Metrics',
     icon: 'fas fa-chart-pie',
   },
+  {
+    name: 'interactivechat',
+    as: 'a',
+    href: '/chat/interactivechat',
+    label: 'Coming Soon',
+    icon: 'fas fa-comments',
+  },
 ];
 // Sub menus
 const SUBMENUS = [
   {
-    name: 'cards',
+    name: 'login',
     as: 'a',
-    href: '/card/posts',
-    label: 'Cards',
-    icon: 'fas fa-clone',
-  },
-  {
-    name: 'carousels',
-    as: 'a',
-    href: '/carousel/carousels',
-    label: 'Carousels',
+    href: '/page/login',
+    label: 'Login',
     icon: '',
-  },
-  {
-    name: 'pages',
-    as: 'a',
-    href: '#',
-    label: 'Pages',
-    icon: '',
-    subLinks: [
-      {
-        name: 'profile',
-        as: 'a',
-        href: '/page/profile',
-        label: 'Profile',
-        icon: '',
-      },
-      {
-        name: 'setting',
-        as: 'a',
-        href: '/page/setting',
-        label: 'Settings',
-        icon: '',
-      },
-      {
-        name: 'login',
-        as: 'a',
-        href: '/page/login',
-        label: 'Login',
-        icon: '',
-      },
-    ],
-  },
-  {
-    name: 'forms',
-    as: 'a',
-    href: '/form/forms',
-    label: 'Forms',
-    icon: '',
-  },
-  {
-    name: 'pages',
-    as: 'a',
-    href: '#',
-    label: 'Pages',
-    icon: '',
-    subLinks: [
-      {
-        name: 'profile',
-        as: 'a',
-        href: '/page/profile',
-        label: 'Profile',
-        icon: '',
-      },
-      {
-        name: 'setting',
-        as: 'a',
-        href: '/page/setting',
-        label: 'Settings',
-        icon: '',
-      },
-      {
-        name: 'login',
-        as: 'a',
-        href: '/page/login',
-        label: 'Login',
-        icon: '',
-      },
-    ],
   },
 ];
 

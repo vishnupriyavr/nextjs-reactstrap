@@ -1,7 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import propTypes from 'prop-types';
-import { Col } from 'reactstrap';
+import { Col, Button } from 'reactstrap';
 
 class EmployeeVCard extends React.Component {
   constructor(props) {
@@ -57,15 +57,9 @@ class EmployeeVCard extends React.Component {
                       {employee.about}
                     </p>
                     <div>
-                      <a href="#" className="text-info h5 mr-1">
-                        <i className="fab fa-linkedin"></i>
-                      </a>
-                      <a href="#" className="text-dark h5 mr-1">
-                        <i className="fab fa-github"></i>
-                      </a>
-                      <a href="#" className="text-primary h5 mr-1">
-                        <i className="fab fa-facebook"></i>
-                      </a>
+                      <Button outline color="success">
+                        Lets Clone It!
+                      </Button>
                     </div>
                   </Col>
                 </div>

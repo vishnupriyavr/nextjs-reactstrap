@@ -8,8 +8,9 @@ const EmployeePage = memo(props => {
 
   return (
     <>
+      <div className="d-block clearfix"></div>
       <h4>Predefined Templates</h4>
-      <EmployeeCard items={CARDS.employees} />
+      <EmployeeVCard items={CARDS.employees} />
     </>
   );
 });

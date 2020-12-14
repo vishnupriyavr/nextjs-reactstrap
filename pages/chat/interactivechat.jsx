@@ -1,34 +1,28 @@
-import React from 'react';
+import React, { memo } from 'react';
+import { CARDS } from '../../constants/cards';
+import {
+  PostCard,
+  ProfileCard,
+  MenuCard,
+  MenuCardDiscount,
+} from '../../components/card';
 
-import MainLayout from '../../layout/MainLayout';
-import ChatContainer from '../../components/container/chat/ChatContainer';
-import HeadDefault from '../../layout/head/HeadDefault';
+const PostsPage = memo(props => {
+  return (
+    <>
+      <h1>Cards</h1>
+      <div className="hero">
+        <h3>Boxed</h3>
+        <PostCard items={CARDS.posts} />
+        <h3>Profile</h3>
+        <ProfileCard items={CARDS.posts} />
+        <h3>Menus</h3>
+        <MenuCard items={CARDS.menus} />
+        <h3>Menu Discount</h3>
+        <MenuCardDiscount items={CARDS.menus} />
+      </div>
+    </>
+  );
+});
 
-class InteractiveChat extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { isScrolled: false };
-  }
-
-  static async getInitialProps(props) {
-    const { store, isServer, req, res } = props.ctx;
-  }
-
-  render() {
-    const { dispatch, storeLayout } = this.props;
-
-    return (
-      <>
-        <HeadDefault
-          title="Interactive Chat | Next.JS with Reactstrap (React dashboard web application)"
-          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
-        />
-        <MainLayout activeLink="interactivechat">
-          <ChatContainer />
-        </MainLayout>
-      </>
-    );
-  }
-}
-
-export default InteractiveChat;
+export default PostsPage;
