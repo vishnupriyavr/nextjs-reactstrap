@@ -144,7 +144,7 @@ const DashboardPage = memo(props => {
           <Card className="h-100 mb-2">
             <CardBody>
               <CardTitle tag="h4" className="headline-mm">
-                Messages
+                ML Metrics Summary
               </CardTitle>
               <Row>
                 <Media>

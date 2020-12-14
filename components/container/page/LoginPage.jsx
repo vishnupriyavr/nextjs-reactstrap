@@ -7,6 +7,7 @@ import {
   Label,
   Input,
   Button,
+  Col,
 } from 'reactstrap';
 
 const LoginPage = memo(props => {
@@ -18,6 +19,13 @@ const LoginPage = memo(props => {
         <Form action="/page/profile" method="POST">
           <fieldset>
             <legend className="text-primary bg-gradient-primary font-weight-bold uppercase">
+              <Col xs="12" md="8" className="mx-auto">
+                <img
+                  src="/images/proven-logo.png"
+                  className="rounded-circle img-thumbnail mt-5"
+                  alt="Logo"
+                />
+              </Col>
               <h3 className="mt-2 ml-3 text-light text-center">Login</h3>
             </legend>
             <FormGroup>
@@ -45,7 +53,7 @@ const LoginPage = memo(props => {
                 id="exampleCheck3"
               />
               <Label check for="exampleCheck3">
-                Check me out
+                Keep me logged in
               </Label>
             </FormGroup>
           </fieldset>
