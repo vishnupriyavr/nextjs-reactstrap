@@ -57,6 +57,10 @@ const ButtonsPage = memo(props => {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const togglePopOver = () => setPopoverOpen(!popoverOpen);
 
+  const [visible, setVisible] = useState(true);
+
+  const onDismiss = () => setVisible(false);
+
   return (
     <>
       <h3>Bring Your Own Data</h3>

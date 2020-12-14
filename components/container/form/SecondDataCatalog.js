@@ -11,6 +11,8 @@ import {
   PopoverBody,
   Label,
   Input,
+  Alert,
+  Container,
 } from 'reactstrap';
 
 import ModalToIntentAdd from './ModalToIntentAdd';
@@ -57,6 +59,7 @@ const SecondDataCatalog = memo(props => {
         <Col sm="12">
           <div className="p-3 align-items-center text-white-50 bg-gradient-primary box-shadow">
             <h5>Upload your data</h5>
+
             <div className="bg-white p-3 text-secondary mx-auto">
               <Form className="form-horizontal" action="" method="GET">
                 <div className="form-row">
@@ -156,6 +159,10 @@ const SecondDataCatalog = memo(props => {
                     <>
                       <Col sm="6">
                         <Label for="statusText">Provide Data Entries</Label>
+                        <Container className="themed-container" fluid="sm">
+                          <b>Note:&nbsp;</b> Please provide us with atleast{' '}
+                          <b>10 examples</b> for each Data Entry.
+                        </Container>
                         <Input
                           type="textarea"
                           id="statusText"
