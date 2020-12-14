@@ -21,8 +21,8 @@ class Employees extends React.Component {
     return (
       <>
         <HeadDefault
-          title="Templates | Next.JS with Reactstrap (React dashboard web application)"
-          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+          title="Templates | Proven Solution NLP Engine"
+          description="Proven Solution NLP Engine"
         />
         <MainLayout
           activeLink="employees"

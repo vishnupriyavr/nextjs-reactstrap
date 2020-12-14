@@ -1,11 +1,10 @@
 import React from 'react';
 
 import MainLayout from '../../layout/MainLayout';
-//import ProfileContainer from '../../components/container/page/ProfileContainer';
-import HomePage from '../../components/container/HomePage';
+import ButtonsContainer from '../../components/container/form/ButtonsContainer';
 import HeadDefault from '../../layout/head/HeadDefault';
 
-class Profile extends React.Component {
+class Buttons extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isScrolled: false };
@@ -20,15 +19,19 @@ class Profile extends React.Component {
     return (
       <>
         <HeadDefault
-          title="Get Started | Next.JS with Reactstrap (React dashboard web application)"
-          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+          title="Bring Your Own Data | Proven Solution NLP Engine"
+          description="Proven Solution NLP Engine."
         />
-        <MainLayout activeLink="page.profile">
-          <HomePage />
+        <MainLayout
+          dispatch={dispatch}
+          storeLayout={storeLayout}
+          activeLink="buttons"
+        >
+          <ButtonsContainer />
         </MainLayout>
       </>
     );
   }
 }
 
-export default Profile;
+export default Buttons;

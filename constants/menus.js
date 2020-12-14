@@ -1,38 +1,38 @@
 // Menus
 const MENUS = [
   {
-    name: 'profile',
+    name: 'getstarted',
     as: 'a',
-    href: '/page/profile',
+    href: '/page/getstart',
     label: 'Getting Started',
     icon: 'fas fa-chart-pie',
   },
   {
-    name: 'employees',
+    name: 'templates',
     as: 'a',
-    href: '/card/employees',
+    href: '/card/templates',
     label: 'Templates',
     icon: 'fas fa-clone',
   },
 
   {
-    name: 'buttons',
+    name: 'byod',
     as: 'a',
-    href: '/form/buttons',
+    href: '/form/byod',
     label: 'Bring Your data',
     icon: 'fas fa-database',
   },
   {
-    name: 'dashboard',
+    name: 'metrics',
     as: 'a',
-    href: '/dashboard/dashboard',
+    href: '/dashboard/metrics',
     label: 'Metrics',
     icon: 'fas fa-chart-pie',
   },
   {
-    name: 'interactivechat',
+    name: 'comingsoon',
     as: 'a',
-    href: '/chat/interactivechat',
+    href: '/chat/comingsoon',
     label: 'Coming Soon',
     icon: 'fas fa-bolt',
   },

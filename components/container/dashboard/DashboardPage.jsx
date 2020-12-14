@@ -55,7 +55,7 @@ const DashboardPage = memo(props => {
                 >
                   <i className="fas fa-clock fa-3x"></i>{' '}
                   <span>
-                    234 <CardText>Real Time</CardText>
+                    234 mins <CardText>Average Time Spent</CardText>
                   </span>
                 </Col>
               </Row>
@@ -72,7 +72,7 @@ const DashboardPage = memo(props => {
           <Card className="h-100 mb-2">
             <CardBody>
               <CardTitle tag="h4" className="headline-mm">
-                Followers
+                Conversation Usage Pattern
               </CardTitle>
               {/* <CardText> */}
               <Row className="mb-2">
@@ -82,7 +82,7 @@ const DashboardPage = memo(props => {
                     href="#"
                     className="color-icons icon-rounded-circle"
                   >
-                    <i className="fab fa-facebook"></i> 1290
+                    <i className="fas fa-user-times"></i> Fallback:90
                   </CardText>
                 </Col>
                 <Col xs="4" className="d-inline align-items-center">

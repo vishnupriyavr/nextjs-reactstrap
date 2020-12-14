@@ -1,7 +1,8 @@
 import React from 'react';
 
-import SingleLayout from '../../layout/SingleLayout';
-import LoginContainer from '../../components/container/page/LoginContainer';
+import MainLayout from '../../layout/MainLayout';
+//import ProfileContainer from '../../components/container/page/ProfileContainer';
+import HomePage from '../../components/container/HomePage';
 import HeadDefault from '../../layout/head/HeadDefault';
 
 class Profile extends React.Component {
@@ -19,12 +20,12 @@ class Profile extends React.Component {
     return (
       <>
         <HeadDefault
-          title="Login | Proven Solution NLP Engine"
-          description="Proven Solution NLP Engine."
+          title="Get Started | Proven Solution NLP Engine"
+          description="Proven Solution NLP Engine"
         />
-        <SingleLayout>
-          <LoginContainer />
-        </SingleLayout>
+        <MainLayout activeLink="page.profile">
+          <HomePage />
+        </MainLayout>
       </>
     );
   }

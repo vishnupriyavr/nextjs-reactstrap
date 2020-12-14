@@ -20,7 +20,7 @@ const ThirdDataCatalog = memo(props => {
       <Col sm="12">
         <div className="p-3 align-items-center text-white-50 bg-gradient-primary box-shadow">
           <h5>Your bot is ready!</h5>
-          <div className="bg-white p-3 text-info mx-auto">
+          <div className="bg-cream p-3 text-info mx-auto">
             <Form className="form-horizontal" action="" method="GET">
               <Col sm="7">
                 <Alert className="bg-gradient-warning text-white">
