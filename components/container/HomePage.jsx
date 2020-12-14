@@ -7,24 +7,35 @@ const HomePage = memo(props => {
   return (
     <>
       <div className="hero-start">
-        <h4>Welcome to Proven Solutions NLP Engine!</h4>
+        <h4>Welcome to Proven Solutions NLP Engine</h4>
         <Container>
           <div className="lead my-5">
             <Row className="text-center mx-auto my-5">
-              <Col className="my-3">
-                <i className="fas fa-file-code fa-8x text-primary"></i>
+              <Col className="my-4">
+                <Card>
+                  <i className="fas fa-file-code fa-6x text-primary"></i>
+                </Card>
               </Col>
-              <Col className="my-3">
-                <i className="fas fa-database fa-8x text-info"></i>
+              <Col className="my-4">
+                <Card>
+                  <i className="fas fa-database fa-6x text-info"></i>
+                </Card>
               </Col>
-              <Col className="my-3">
-                <i className="fas fa-chart-bar fa-8x text-success"></i>
+              <Col className="my-4">
+                <Card>
+                  <i className="fas fa-chart-bar fa-6x text-success"></i>
+                </Card>
+              </Col>
+              <Col className="my-4">
+                <Card>
+                  <i className="fas fa-house-damage fa-6x text-secondary"></i>
+                </Card>
               </Col>
             </Row>
           </div>
           <CardDeck>
             <Card color="dark">
-              <Col lg="12">
+              <Col lg="9">
                 <Link href="/page/documentation">
                   <a href="/page/documentation" className="text-light">
                     <h4>
@@ -40,7 +51,7 @@ const HomePage = memo(props => {
               </Col>
             </Card>
             <Card color="dark">
-              <Col lg="12">
+              <Col lg="9">
                 <Link href="/page/documentation">
                   <a href="/page/documentation" className="text-light">
                     <h4>
@@ -53,13 +64,28 @@ const HomePage = memo(props => {
               </Col>
             </Card>
             <Card color="dark">
-              <Col lg="12">
+              <Col lg="9">
                 <Link href="/page/documentation">
                   <a href="/page/documentation" className="text-light">
                     <h4>
                       Analyze your data <i className="fas fa-chevron-right"></i>
                     </h4>
                     <p>Analyze user related and machine learning metrics.</p>
+                  </a>
+                </Link>
+              </Col>
+            </Card>
+            <Card color="dark">
+              <Col lg="9">
+                <Link href="/page/documentation">
+                  <a href="/page/documentation" className="text-light">
+                    <h4>
+                      On-Prem-First <i className="fas fa-chevron-right"></i>
+                    </h4>
+                    <p>
+                      Keep your data secure with the ability to host our
+                      solution on-prem.
+                    </p>
                   </a>
                 </Link>
               </Col>

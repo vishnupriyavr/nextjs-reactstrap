@@ -24,9 +24,10 @@ const ProfilePage = memo(props => {
                     </Col>
                     <div className="text-dark mt-5">
                       <p className="lead my-4 mx-0 mx-sm-auto">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quis, architecto facilis obcaecati beatae, aperiam qui
-                        animi cumque corrupti, voluptatem cum libero quo.
+                        Proven provides consulting, advisory and a complimentary
+                        number of business solutions to assist our clients in
+                        entering markets, growing their organizations, and
+                        succeed in their business goals.
                       </p>
                       <hr className="col-3 col-lg-3 mx-auto" />
                       <div className="my-4 mx-auto px-0 d-flex justify-content-center">
@@ -61,7 +62,7 @@ const ProfilePage = memo(props => {
                         href="#biography"
                         className="text-secondary scrollTo button-down"
                       >
-                        Biography
+                        We help you succeed
                         <div className="clearfix">
                           <span className="btn text-secondary">
                             <i className="fas fa-chevron-down up-down-pulse"></i>
@@ -93,74 +94,37 @@ const ProfilePage = memo(props => {
                       </ul>
                     </Col>
                     <Col lg="9">
-                      <h4 className="headline text-left">
-                        Grew up where all the families loves to cooks
-                      </h4>
+                      <h4 className="headline text-left">Who we are</h4>
                       <blockquote>
                         <p className="lead">
-                          Through this Internet network, our company wishes to
-                          provide a brief explanation of who we are and how we
-                          think and perform our work. Our company perceived that
-                          trust and support from the public is required for the
-                          success of our work and business. We invite you to get
-                          to know our company and product closer through this
-                          internet network.
+                          Proven provides business support solutions that enable
+                          our clients to access GCC markets, grow their business
+                          and succeed in finding efficiencies exporting their
+                          business. We work with a multitude of businesses; big
+                          multinationals, local brands, government entities and
+                          SMEs, proving the same world class service no matter
+                          their industry or size. We are the leading outsource
+                          business services provider in the region and our
+                          solutions are bespoke, professional and tailored for
+                          each business that we work with. By combining
+                          consulting, expert advice and local knowledge with our
+                          in house solutions, we are able to maximize results
+                          for our clients.
                         </p>
-                        <footer>
-                          Quote from:
-                          <cite title="Source Title" className="text-danger">
-                            (Mister Chef Doe)
-                          </cite>
-                        </footer>
                       </blockquote>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus sit maxime eius! Tempore placeat totam
-                        consectetur nostrum, doloribus ratione quas molestiae
-                        sit maiores.
-                        <br />
-                        <br />
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Fuga saepe eum, optio cupiditate, minus a nulla
-                        quod nemo eius laudantium dolorem quasi culpa.
-                        Consequuntur commodi, rerum reprehenderit eos hic
-                        possimus similique dolore reiciendis.
-                      </p>
 
-                      <p className="lead text-muted">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Doloribus sit maxime eius! Tempore placeat totam
-                        consectetur nostrum, doloribus ratione quas molestiae
-                        sit maiores. Lorem ipsum dolor sit, amet consectetur
-                        adipisicing elit. Fuga saepe eum, optio cupiditate,
-                        minus a nulla quod nemo eius laudantium dolorem quasi
-                        culpa. Consequuntur commodi, rerum reprehenderit eos hic
-                        possimus similique dolore reiciendis.
-                      </p>
                       <br />
-
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Esse minus neque asperiores natus, voluptatem
-                        numquam consequuntur sapiente? Libero illum expedita,
-                        dolore id velit at dolores aut! Maxime impedit neque
-                        expedita numquam, odio voluptate repudiandae.
-                      </p>
-                      <div>
-                        Shares: &nbsp;
-                        <a href="#" className="h4 mr-1">
-                          <i className="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" className="h4 mr-1">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" className="h4 mr-1">
-                          <i className="fab fa-pinterest"></i>
-                        </a>
-                        <a href="#" className="h4 mr-1">
-                          <i className="fab fa-linkedin"></i>
-                        </a>
-                      </div>
+                      <h4 className="headline text-left">What we do</h4>
+                      <blockquote>
+                        <p className="lead">
+                          We provide for a number of key business areas- Saudi
+                          business visa, HR , payroll, outsourcing, corporate
+                          immigration, recruitment, accounting, shared services
+                          and government relations.We offer a spectrum of
+                          services; from market testing, entering the Saudi
+                          market to supporting you to achieve your objectives.
+                        </p>
+                      </blockquote>
                     </Col>
                   </Row>
                 </div>

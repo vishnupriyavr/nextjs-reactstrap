@@ -7,6 +7,9 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter,
+  Popover,
+  PopoverHeader,
+  PopoverBody,
   Label,
   Input,
   Form,
@@ -19,10 +22,12 @@ import { TokenAnnotator, TextAnnotator } from 'react-text-annotate';
 const ModalToIntentAdd = memo(props => {
   const { modalToAnnotate, modalContent } = props;
   const [modalToggle, setModalToggle] = useState(modalToAnnotate);
+  const [popoverOpen, setPopoverOpen] = useState();
   const [annotatedText, setAnnotatedText] = useState('');
   const [annotatedTag, setAnnotatedTag] = useState('ACCOUNT_NUMBER');
 
   const toggleModal = () => setModalToggle(!modalToggle);
+  const togglePopOver = () => setPopoverOpen(!popoverOpen);
 
   const TAG_COLORS = {
     ACCOUNT_NUMBER: '#00ffa2',
@@ -38,7 +43,30 @@ const ModalToIntentAdd = memo(props => {
       toggle={toggleModal}
       className={'toggleModel'}
     >
-      <ModalHeader toggle={toggleModal}>Annotate your data</ModalHeader>
+      <ModalHeader toggle={toggleModal}>
+        Annotate your data &nbsp;{' '}
+        <Button
+          outline
+          color="info"
+          name="entityQandA"
+          id="entityQandA"
+          type="button"
+        >
+          <i className="fas fa-question"></i>
+        </Button>
+        <Popover
+          placement="right-start"
+          isOpen={popoverOpen}
+          target="entityQandA"
+          toggle={togglePopOver}
+        >
+          <PopoverHeader>Annotation of data</PopoverHeader>
+          <PopoverBody>
+            Annotation of data is the means of marking special Information on
+            your data and assigning a name to the data for classifying it.
+          </PopoverBody>
+        </Popover>
+      </ModalHeader>
       <ModalBody>
         <Form>
           <FormGroup>

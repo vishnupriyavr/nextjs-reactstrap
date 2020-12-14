@@ -20,18 +20,32 @@ const SecondDataCatalog = memo(props => {
   const [needsEntityArea, setNeedsEntityArea] = useState(false);
   const [needsIntentArea, setNeedsIntentArea] = useState(false);
   const [modalToAnnotate, setModalToAnnotate] = useState(false);
+  const [newEntity, setNewEntity] = useState(false);
+  const [entitiesExist, setEntitiesExist] = useState(false);
   const [modalContent, setModalContent] = useState('');
+
+  const entitiesAdded = [];
 
   const togglePopOver = () => setPopoverOpen(!popoverOpen);
   const showEntityTextArea = () => setNeedsEntityArea(!needsEntityArea);
 
   const submitEntity = () => {
+    entitiesAdded.push(newEntity);
+    setEntitiesExist(true);
+    console.log('entitiesAdded: ' + entitiesAdded);
     setNeedsIntentArea(!needsIntentArea);
   };
 
   const submitIntent = () => {
     setModalToAnnotate(!modalToAnnotate);
   };
+
+  const modalForAnnotation = memo(props => {
+    return <></>;
+  });
+  const annotatorUtility = memo(props => {
+    return <></>;
+  });
 
   return (
     <Row>
@@ -54,7 +68,7 @@ const SecondDataCatalog = memo(props => {
                       <i className="fas fa-question"></i>
                     </Button>
                     <Popover
-                      placement="top"
+                      placement="right-start"
                       isOpen={popoverOpen}
                       target="entityQandA"
                       toggle={togglePopOver}
@@ -112,11 +126,12 @@ const SecondDataCatalog = memo(props => {
                         id="entityTextArea"
                         name="entityTextArea"
                         className="form-control"
-                        placeholder="Start Typing Special Info Entries seperated by new line...."
-                        defaultValue="Start Typing Special Info Entries seperated by new line...."
+                        placeholder="Start Typing Special Info Entries (eg. Account  Number)"
+                        defaultValue="Start Typing Special Info Entries (eg. Account  Number)"
+                        onChange={e => {
+                          setNewEntity(e.target.value);
+                        }}
                       />
-                    </Col>
-                    <Col sm="6">
                       <Button
                         outline
                         size="sm"
@@ -130,8 +145,10 @@ const SecondDataCatalog = memo(props => {
                     </Col>
                   </>
                 ) : null}
+              </div>
+              <div className="form-row mt-3">
                 {needsIntentArea ? (
-                  <Row>
+                  <>
                     <Col sm="6">
                       <Label for="statusText">Provide Data Entries</Label>
                       <Input
@@ -159,13 +176,13 @@ const SecondDataCatalog = memo(props => {
                         Submit Data
                       </Button>
                     </Col>
-                  </Row>
-                ) : null}
-                {modalToAnnotate ? (
-                  <ModalToIntentAdd
-                    modalToAnnotate={modalToAnnotate}
-                    modalContent={modalContent}
-                  />
+                    {modalToAnnotate ? (
+                      <ModalToIntentAdd
+                        modalToAnnotate={modalToAnnotate}
+                        modalContent={modalContent}
+                      />
+                    ) : null}
+                  </>
                 ) : null}
               </div>
               <div className="form-row mt-3">
@@ -184,6 +201,21 @@ const SecondDataCatalog = memo(props => {
         </div>
       </Col>
     </Row>
+  );
+});
+
+const EntitySelectionBox = memo(props => {
+  const { entitiesExist, entitiesAdded } = props;
+  return (
+    <>
+      {entitiesExist ? (
+        <Input type="select" name="select" id="exampleSelect">
+          {entitiesAdded.map(eachEntity => (
+            <option id={eachEntity}>{eachEntity}</option>
+          ))}
+        </Input>
+      ) : null}
+    </>
   );
 });
 export default SecondDataCatalog;
