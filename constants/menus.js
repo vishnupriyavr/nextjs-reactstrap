@@ -34,7 +34,7 @@ const MENUS = [
     as: 'a',
     href: '/chat/interactivechat',
     label: 'Coming Soon',
-    icon: 'fas fa-comments',
+    icon: 'fas fa-bolt',
   },
 ];
 // Sub menus

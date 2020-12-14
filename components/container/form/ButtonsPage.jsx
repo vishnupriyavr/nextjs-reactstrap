@@ -51,6 +51,12 @@ const ButtonsPage = memo(props => {
   const [isFirstDataDone, setIsFirstDataDone] = useState(false);
   const toggleFirstData = e => setIsFirstDataDone(e);
 
+  const [isSecondDataDone, setIsSecondDataDone] = useState(false);
+  const toggleSecondData = e => setIsSecondDataDone(e);
+
+  const [popoverOpen, setPopoverOpen] = useState(false);
+  const togglePopOver = () => setPopoverOpen(!popoverOpen);
+
   return (
     <>
       <h3>Bring Your Own Data</h3>
@@ -61,7 +67,49 @@ const ButtonsPage = memo(props => {
             <h5>Share your data needs</h5>
             <div className="bg-white p-3 text-secondary mx-auto">
               <Form className="form-horizontal" action="" method="GET">
+                <Col sm="7">
+                  <span className="text-black font-weight-bold">
+                    Preliminary Information&nbsp;
+                    <Button
+                      outline
+                      color="info"
+                      name="entityQandA"
+                      id="entityQandA"
+                      type="button"
+                    >
+                      <i className="fas fa-question"></i>
+                    </Button>
+                    <Popover
+                      placement="right-start"
+                      isOpen={popoverOpen}
+                      target="entityQandA"
+                      toggle={togglePopOver}
+                    >
+                      <PopoverHeader>Preliminary Information</PopoverHeader>
+                      <PopoverBody>
+                        Preliminary Information helps us to create and use a
+                        machine learning model to get started with the
+                        development of a bot.
+                      </PopoverBody>
+                    </Popover>
+                  </span>
+                </Col>
                 <div className="form-row">
+                  <Col sm="3">
+                    <span className="text-black font-weight-bold">
+                      <Label for="botNameTextArea">
+                        Provide a name for the bot
+                      </Label>
+                    </span>
+                    <Input
+                      type="text"
+                      id="botNameTextArea"
+                      name="botNameTextArea"
+                      className="form-control"
+                      placeholder="Start Typing name of your bot (eg. KYC Bot)"
+                      defaultValue="Start Typing name of your bot (eg. KYC Bot)"
+                    />
+                  </Col>
                   <Col sm="2">
                     <span className="text-black font-weight-bold">
                       Amount of Data
@@ -165,35 +213,6 @@ const ButtonsPage = memo(props => {
                       </Label>
                     </div>
                   </Col>
-                  <Col sm="6">
-                    <Label className="font-weight-bold">
-                      Do you want to choose from the models that we have?{' '}
-                    </Label>
-                    <div className="form-check">
-                      <Input
-                        type="radio"
-                        name="postFormat"
-                        id="postFormatOne"
-                        className="form-check-input"
-                        value="1"
-                      />
-                      <Label className="form-check-label" for="postFormatOne">
-                        Yes
-                      </Label>
-                    </div>
-                    <div className="form-check">
-                      <Input
-                        type="radio"
-                        name="postFormat"
-                        id="postFormatTwo"
-                        className="form-check-input"
-                        value="0"
-                      />
-                      <Label className="form-check-label" for="postFormatTwo">
-                        No
-                      </Label>
-                    </div>
-                  </Col>
                 </div>
                 <div className="form-row mt-3">
                   <Col sm="12" className="text-right mt-1">
@@ -204,7 +223,7 @@ const ButtonsPage = memo(props => {
                         toggleFirstData(true);
                       }}
                     >
-                      <i className="fas fa-check"></i> Proceed
+                      <i className="fas fa-check"></i> Proceed to Next Step
                     </Button>
                   </Col>
                 </div>
