@@ -2,75 +2,27 @@ const CARDS = {
   posts: [
     {
       id: 1,
-      category: 'Recipes',
+      category: 'Chat',
       title:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
       text:
         "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
       image: '/images/menu768x768px1.jpg',
-      publishedAt: 'Wed, 12-02-2018',
-      postBy: 'Wed Admin',
+      publishedAt: 'Mon, 14-12-2020',
+      postBy: 'Meet our Team',
       views: '201',
     },
     {
       id: 2,
-      category: 'Uncategorized',
+      category: 'Analysis',
       title:
         'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
       text:
         "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
       image: '/images/menu768x768px2.jpg',
-      publishedAt: 'Wed, 12-02-2018',
-      postBy: 'Owner',
+      publishedAt: 'Mon, 14-12-2020',
+      postBy: 'Meet our Team',
       views: '23',
-    },
-    {
-      id: 3,
-      category: 'Meals',
-      title:
-        'Contrary to popular belief, Lorem Ipsum is not simply random text',
-      text:
-        'It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.',
-      image: '/images/menu768x768px3.jpg',
-      publishedAt: 'Wed, 12-02-2019',
-      postBy: 'Lead Chef',
-      views: '120',
-    },
-    {
-      id: 4,
-      category: 'Steaks',
-      title:
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested',
-      text:
-        'The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
-      image: '/images/menu768x768px4.jpg',
-      publishedAt: 'Wed, 12-02-2019',
-      postBy: 'Chief Kitchen',
-      views: '321',
-    },
-    {
-      id: 5,
-      category: 'Random',
-      title:
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested',
-      text:
-        'The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
-      image: '/images/menu768x768px5.jpg',
-      publishedAt: 'Wed, 12-02-2019',
-      postBy: 'Chief Kitchen',
-      views: '435',
-    },
-    {
-      id: 6,
-      category: 'Uncategorized',
-      title:
-        'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested',
-      text:
-        'The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).',
-      image: '/images/menu768x768px6.jpg',
-      publishedAt: 'Wed, 12-02-2019',
-      postBy: 'Chief Kitchen',
-      views: '98',
     },
   ],
   menus: [
@@ -250,7 +202,7 @@ const CARDS = {
       name: 'Customer Service Bot',
       title: 'Chatbot for Customer Service',
       about:
-        "Predefined Template to significantly reduce case volume for customer service reps by answering basic customer questions .",
+        'Predefined Template to significantly reduce case volume for customer service reps by answering basic customer questions .',
       photo: '/images/customer-service-bot.jpg',
     },
     {
@@ -258,7 +210,7 @@ const CARDS = {
       name: 'Retail Bot',
       title: 'Chatbot for Retail',
       about:
-        "Predefined Template to provide an experience similar to that of shopping with a friend or a store associate.",
+        'Predefined Template to provide an experience similar to that of shopping with a friend or a store associate.',
       photo: '/images/retail-bot.png',
     },
   ],

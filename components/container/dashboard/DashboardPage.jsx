@@ -55,7 +55,7 @@ const DashboardPage = memo(props => {
                 >
                   <i className="fas fa-clock fa-3x"></i>{' '}
                   <span>
-                    234 mins <CardText>Average Time Spent</CardText>
+                    34 mins <CardText>Average Time Spent</CardText>
                   </span>
                 </Col>
               </Row>
@@ -72,63 +72,33 @@ const DashboardPage = memo(props => {
           <Card className="h-100 mb-2">
             <CardBody>
               <CardTitle tag="h4" className="headline-mm">
-                Conversation Usage Pattern
+                Conversation Identification
               </CardTitle>
-              {/* <CardText> */}
               <Row className="mb-2">
-                <Col xs="4" className="d-inline align-items-center">
-                  <CardText
-                    tag="a"
-                    href="#"
-                    className="color-icons icon-rounded-circle"
-                  >
-                    <i className="fas fa-user-times"></i> Fallback:90
-                  </CardText>
+                <Col
+                  xs="4"
+                  className="d-inline align-items-center text-success"
+                >
+                  <i className="fas fa-user-check fa-3x"></i>{' '}
+                  <span>
+                    1930 <CardText>Accurate</CardText>
+                  </span>
                 </Col>
-                <Col xs="4" className="d-inline align-items-center">
-                  <CardText
-                    tag="a"
-                    href="#"
-                    className="color-icons icon-rounded-circle"
-                  >
-                    <i className="fab fa-twitter"></i> 2324
-                  </CardText>
+                <Col xs="4" className="d-inline align-items-center text-info">
+                  <i className="fas fa-user-times fa-3x"></i>{' '}
+                  <span>
+                    20 <CardText>Fallback</CardText>
+                  </span>
                 </Col>
-                <Col xs="4" className="d-inline align-items-center">
-                  <CardText
-                    tag="a"
-                    href="#"
-                    className="color-icons icon-rounded-circle"
-                  >
-                    <i className="fab fa-instagram"></i> 12341
-                  </CardText>
-                </Col>
-                <Col xs="4" className="d-inline align-items-center">
-                  <CardText
-                    tag="a"
-                    href="#"
-                    className="color-icons icon-rounded-circle"
-                  >
-                    <i className="fab fa-linkedin"></i> 1331
-                  </CardText>
-                </Col>
-                <Col xs="4" className="d-inline align-items-center">
-                  <CardText
-                    tag="a"
-                    href="#"
-                    className="color-icons icon-rounded-circle"
-                  >
-                    <i className="fab fa-pinterest"></i> 4124
-                  </CardText>
-                </Col>
-                <Col xs="4" className="d-inline align-items-center">
-                  <CardText
-                    tag="a"
-                    href="#"
-                    className="color-icons icon-rounded-circle"
-                  >
-                    <i className="fab fa-github"></i> 13411
-                  </CardText>
+
+                <Col
+                  xs="4"
+                  className="d-inline align-items-center text-primary"
+                >
+                  <i className="fas fa-user-minus fa-3x"></i>{' '}
+                  <span>
+                    234 <CardText>Stale(Left in the middle)</CardText>
+                  </span>
                 </Col>
               </Row>
               {/* </CardText> */}
@@ -137,6 +107,9 @@ const DashboardPage = memo(props => {
                   <a href="#" className="float-right">Add new</a>
                 </Row>
               </CardFooter> */}
+              <Button color="danger" size="md" block>
+                <i className="fas fa-chart-bar"></i> statistic
+              </Button>
             </CardBody>
           </Card>
         </Col>
@@ -146,30 +119,35 @@ const DashboardPage = memo(props => {
               <CardTitle tag="h4" className="headline-mm">
                 ML Metrics Summary
               </CardTitle>
-              <Row>
-                <Media>
-                  <Media left href="#" className="col-4">
-                    <Media
-                      className="img-thumbnail img-fluid"
-                      src="/images/profile6.jpg"
-                      alt="Avatar"
-                    />
-                  </Media>
-                  <Media body className="col-8 pl-0">
-                    <Media heading tag="h5">
-                      Micah Immanuel
-                    </Media>
-                    <CardText tag="small">
-                      Hi, I already sent you the design to your email.
-                      {/* <span className="text-muted small float-right">
-                        2 hour ago
-                      </span> */}
-                    </CardText>
-                  </Media>
-                </Media>
+              <Row className="mb-2">
+                <Col
+                  xs="4"
+                  className="d-inline align-items-center text-success"
+                >
+                  <i className="fas fa-bullseye fa-3x"></i>{' '}
+                  <span>
+                    80 <CardText>Accuracy</CardText>
+                  </span>
+                </Col>
+                <Col xs="4" className="d-inline align-items-center text-info">
+                  <i className="fas fa-cog fa-3x"></i>{' '}
+                  <span>
+                    80 <CardText>Precision</CardText>
+                  </span>
+                </Col>
+                <Col
+                  xs="4"
+                  className="d-inline align-items-center text-primary"
+                >
+                  <i className="fas fa-calculator fa-3x"></i>{' '}
+                  <span>
+                    80 <CardText>F1 Score</CardText>
+                  </span>
+                </Col>
               </Row>
-              <Button outline size="sm" color="primary" className="float-right">
-                See all messages
+              &nbsp;&nbsp;
+              <Button color="danger" size="md" block>
+                <i className="fas fa-chart-bar"></i> statistic
               </Button>
             </CardBody>
           </Card>
