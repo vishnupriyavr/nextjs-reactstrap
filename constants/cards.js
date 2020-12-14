@@ -3,25 +3,21 @@ const CARDS = {
     {
       id: 1,
       category: 'Chat',
-      title:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
-      text:
-        "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-      image: '/images/menu768x768px1.jpg',
+      title: 'Interactive Chat',
+      text: 'Ability to test your bot real time.',
+      image: '/images/chat-soon.png',
       publishedAt: 'Mon, 14-12-2020',
-      postBy: 'Meet our Team',
+      postBy: 'Talk to our Team',
       views: '201',
     },
     {
       id: 2,
-      category: 'Analysis',
-      title:
-        'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout',
-      text:
-        "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
-      image: '/images/menu768x768px2.jpg',
+      category: 'Analytics',
+      title: 'We analyse and intelligently categorise your enterprise data.',
+      text: 'NLP using your enterprise data.',
+      image: '/images/analysis.png',
       publishedAt: 'Mon, 14-12-2020',
-      postBy: 'Meet our Team',
+      postBy: 'Talk to our Team',
       views: '23',
     },
   ],

@@ -30,9 +30,9 @@ const MENUS = [
     icon: 'fas fa-chart-pie',
   },
   {
-    name: 'comingsoon',
+    name: 'comingSoon',
     as: 'a',
-    href: '/chat/comingsoon',
+    href: '/card/comingSoon',
     label: 'Coming Soon',
     icon: 'fas fa-bolt',
   },

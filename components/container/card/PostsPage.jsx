@@ -10,16 +10,11 @@ import {
 const PostsPage = memo(props => {
   return (
     <>
-      <h1>Cards</h1>
+      &nbsp;&nbsp;
+      <h3>Coming Soon</h3>
+      &nbsp;&nbsp;
       <div className="hero">
-        <h3>Boxed</h3>
-        <PostCard items={CARDS.posts} />
-        <h3>Profile</h3>
         <ProfileCard items={CARDS.posts} />
-        <h3>Menus</h3>
-        <MenuCard items={CARDS.menus} />
-        <h3>Menu Discount</h3>
-        <MenuCardDiscount items={CARDS.menus} />
       </div>
     </>
   );

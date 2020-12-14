@@ -161,7 +161,7 @@ const DashboardPage = memo(props => {
           >
             <CardBody>
               <CardTitle tag="h4" className="headline-mm">
-                NLP Metrics
+                Engine Accuracy Metrics
               </CardTitle>
 
               {/* <CardText> */}

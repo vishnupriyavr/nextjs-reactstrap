@@ -23,9 +23,15 @@ class ProfileCard extends React.Component {
       <Row>
         {items.map((post, key) => {
           return (
-            <Col md="6" lg="4" key={key}>
+            <Col md="5" lg="4" key={key}>
               <Card>
-                <CardImg top width="100%" src={post.image} alt={post.title} />
+                <CardImg
+                  top
+                  width="100%"
+                  height="100%"
+                  src={post.image}
+                  alt={post.title}
+                />
                 <CardBody>
                   <CardTitle tag="h4">{post.title}</CardTitle>
                   <CardText>{post.text}</CardText>

@@ -32,7 +32,7 @@ const Example = props => {
               toggle('1');
             }}
           >
-            NLP Overview
+            Data Classification Overview
           </NavLink>
         </NavItem>
         <NavItem>
@@ -42,17 +42,7 @@ const Example = props => {
               toggle('2');
             }}
           >
-            NLP Model Playground
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink
-            className={classnames({ active: activeTab === '1' })}
-            onClick={() => {
-              toggle('1');
-            }}
-          >
-            NLP Clustering
+            Playground
           </NavLink>
         </NavItem>
       </Nav>
@@ -60,10 +50,9 @@ const Example = props => {
         <TabPane tabId="1">
           <Row>
             <Col sm="12">
-              <h5>NLP Overview Metrics</h5>
               <iframe
-                src="https://8501-ead87689-a21a-4d93-9b75-7a084809c021.ws-us03.gitpod.io/"
-                title="NLP Overview Metrics iframe"
+                src="http://localhost:8503/"
+                title="Data Classification Overview iframe"
                 width="1000"
                 height="500"
               >
@@ -75,10 +64,9 @@ const Example = props => {
         <TabPane tabId="2">
           <Row>
             <Col sm="6">
-              <h5>NLP Model Metrics</h5>
               <iframe
-                src="https://8501-ead87689-a21a-4d93-9b75-7a084809c021.ws-us03.gitpod.io/"
-                title="NLP Overview Metrics iframe"
+                src="http://localhost:8504/"
+                title="Playground"
                 width="1000"
                 height="500"
               >

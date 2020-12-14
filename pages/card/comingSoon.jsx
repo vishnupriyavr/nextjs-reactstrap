@@ -19,8 +19,8 @@ class Posts extends React.Component {
     return (
       <>
         <HeadDefault
-          title="Posts | Next.JS with Reactstrap (React dashboard web application)"
-          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+          title="Coming Soon | Proven Solution NLP Engine"
+          description="Proven Solution NLP Engine."
         />
         <MainLayout
           dispatch={dispatch}
