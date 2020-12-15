@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, Suspense } from 'react';
 import { useState } from 'react';
 
 import {
@@ -215,7 +215,9 @@ const SecondDataCatalog = memo(props => {
           </div>
         </Col>
       </Row>
-      {isSecondDataDone ? <ThirdDataCatalog /> : null}
+      <Suspense fallback={<h2>Product list is loading...</h2>}>
+        {isSecondDataDone ? <ThirdDataCatalog /> : null}
+      </Suspense>
     </>
   );
 });

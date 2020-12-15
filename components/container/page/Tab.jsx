@@ -49,11 +49,11 @@ const Example = props => {
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
           <Row>
-            <Col sm="12">
+            <Col md="6" lg="12" className="mb-4">
               <iframe
-                src="http://localhost:8503/"
+                src="http://34.123.33.69:8503/"
                 title="Data Classification Overview iframe"
-                width="1000"
+                width="1100"
                 height="500"
               >
                 <p>Your browser does not support iframes.</p>
@@ -65,9 +65,9 @@ const Example = props => {
           <Row>
             <Col sm="6">
               <iframe
-                src="http://localhost:8504/"
+                src="http://34.123.33.69:8504/"
                 title="Playground"
-                width="1000"
+                width="1100"
                 height="500"
               >
                 <p>Your browser does not support iframes.</p>

@@ -152,11 +152,11 @@ const DashboardPage = memo(props => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="6" lg="8" className="mb-4">
+        <Col md="6" lg="12" className="mb-4">
           <Card
             body
             inverse
-            style={{ backgroundColor: '#333', borderColor: '#333' }}
+            style={{ backgroundColor: '#0588a6' }}
             className="h-100 mb-2"
           >
             <CardBody>
